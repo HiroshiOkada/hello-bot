@@ -1,6 +1,7 @@
 # hello bot
 
 プログラムを実行して結果を返す。 [Mastodon](https://github.com/tootsuite/mastodon) チャットボットです。
+( [English](https://hiroshiokada.github.io/hello-bot/index.html) )
 
 ## 使い方
 
@@ -63,7 +64,7 @@ int main()
 ```
 返信
 
-<img src="./hello.png" />
+<img src="https://hiroshiokada.github.io/hello-bot/hello.png" />
 
 
 また、プログラムによって `out.svg` `out.png` というイメージファイルを作成すると。 `out.svg` は `png` に変換して、 `out.png` はそのままそれを返します。
@@ -91,7 +92,7 @@ void main()
 ```
 
 返信
-<img src="rbg-tile.png" />
+<img src="https://hiroshiokada.github.io/hello-bot/rgb-tile.png" />
 
 ## 対応している拡張子とプログラム処理系
 

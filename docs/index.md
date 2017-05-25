@@ -1,6 +1,9 @@
+
+
 # hello bot
 
 A [Mastodon](https://github.com/tootsuite/mastodon) chat bot that execute programs and return the result.
+( [日本語](https://hiroshiokada.github.io/hello-bot/index-j.html) )
 
 ## How to use
 
@@ -62,7 +65,7 @@ int main()
 }
 ```
 reply
-<img src="./hello.png" />
+<img src="https://hiroshiokada.github.io/hello-bot/hello.png" />
 
 
 If you create `out.png` it return the image.
@@ -91,7 +94,7 @@ void main()
 ```
 
 reply
-<img src="rbg-tile.png" />
+<img src="https://hiroshiokada.github.io/hello-bot/rgb-tile.png" />
 
 ## supported prgram language
 
