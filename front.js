@@ -92,7 +92,6 @@ function rpushData(notification) {
       console.log("ERR RPUSH JOB_WAIT_QUEUE:" + err + ':' + JSON.stringify(data));
       return;
     }
-    fs.writeFileSync('./tmp/n' + status.id + '.json', JSON.stringify(notification, null, 4), 'utf8');
   });
 }
 
