@@ -1,0 +1,4 @@
+{
+  "api_url": "https://mastodon.example.com/api/v1/",
+  "access_token": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+}

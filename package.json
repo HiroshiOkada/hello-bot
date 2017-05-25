@@ -1,0 +1,28 @@
+{
+  "name": "hello-bot",
+  "version": "0.5.0",
+  "description": "Mastodon bot that run programs.",
+  "main": "front.js",
+  "repository": "git@github.com:HiroshiOkada/hello-bot",
+  "author": "Hiroshi Okada",
+  "license": "MIT",
+  "dependencies": {
+    "mastodon": "^1.2.0",
+    "redis": "^2.7.1"
+  },
+  "scripts": {
+    "start-redis": "docker run -d --network=none --name bot-redis -v `pwd`/redis-data:/data redis:3.2-alpine redis-server /data/redis.conf",
+    "stop-redis": "docker stop bot-redis ; docker rm bot-redis",
+    "start-bot" : "./bash-script/start-bot.sh",
+    "stop-bot" : "rm ./job/run-* && kill -2 $(cat ./job/front.pid) && rm ./job/front.pid",
+    "clear-notifications" : "node clear-notifications.js",
+    "front": "node front.js",
+    "job": "./bash-script/job.sh",
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.4.1",
+    "rewire": "^2.5.2"
+  }
+}
