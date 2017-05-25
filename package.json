@@ -11,7 +11,7 @@
     "redis": "^2.7.1"
   },
   "scripts": {
-    "start-redis": "docker run -d --network=none --name bot-redis -v `pwd`/redis-data:/data redis:3.2-alpine redis-server /data/redis.conf",
+    "start-redis": "mkdir -p ./redis-data/db && docker run -d --network=none --name bot-redis -v `pwd`/redis-data:/data redis:3.2-alpine redis-server /data/redis.conf",
     "stop-redis": "docker stop bot-redis ; docker rm bot-redis",
     "start-bot" : "./bash-script/start-bot.sh",
     "stop-bot" : "rm ./job/run-* && kill -2 $(cat ./job/front.pid) && rm ./job/front.pid",
