@@ -25,19 +25,18 @@ cd hello-bot
 cp config.json.sample sample.json`
 editor sample.json
 yarn install
-yarn run docker-build
+docker pull okadahiroshi/bot-playground
 ```
 if you don't know how to get `access_token` you can use
 [@toycode/mastodon-auth-cli](https://www.npmjs.com/package/@toycode/mastodon-auth-cli).
 
 ## Usage
 
-1. docker pull okadahiroshi/bot-playground
-2. start redis server -- yarn run start-redis
-3. clear notifications (optional) -- yarn clear-notifications
+1. start redis server -- yarn start-redis
+2. clear notifications (optional) -- yarn clear-notifications
 3. start bot -- yran start-bot
 4. stop bot -- yarn stop-bot
-5. stop redis searver
+5. stop redis searver -- yarn stop-redis
 
 ## License
 
