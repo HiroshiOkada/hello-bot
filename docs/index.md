@@ -98,7 +98,7 @@ reply
 
 ## supported prgram language
 
-|拡張子     |language/processer|
+|extension |language/processer|
 |:---:     |:---:            |
 |.asm      | NASM            |
 |.bc       | bc              |
