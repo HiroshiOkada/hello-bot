@@ -22,7 +22,7 @@ yarn (0.24.4)
 ```
 git clone git@github.com:HiroshiOkada/hello-bot.git
 cd hello-bot
-cp config.json.sample sample.json`
+cp config.json.sample sample.json
 editor sample.json
 yarn install
 docker pull okadahiroshi/bot-playground
@@ -34,7 +34,7 @@ if you don't know how to get `access_token` you can use
 
 1. start redis server -- yarn start-redis
 2. clear notifications (optional) -- yarn clear-notifications
-3. start bot -- yran start-bot
+3. start bot -- yarn start-bot
 4. stop bot -- yarn stop-bot
 5. stop redis searver -- yarn stop-redis
 
